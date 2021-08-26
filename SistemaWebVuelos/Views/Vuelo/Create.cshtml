@@ -1,0 +1,42 @@
+﻿@model SistemaWebVuelos.Models.Vuelo
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    <div>
+        <hr />
+        @Html.HiddenFor(model => model.Id)
+
+        <div>
+            @Html.LabelFor(model => model.Fecha)
+            @Html.EditorFor(model => model.Fecha)
+        </div>
+
+
+        <div>
+            @Html.LabelFor(model => model.Origen)
+            @Html.EditorFor(model => model.Origen)
+        </div>
+
+        <div>
+            @Html.LabelFor(model => model.Destino)
+            @Html.EditorFor(model => model.Destino)
+        </div>
+
+        <div>
+            @Html.LabelFor(model => model.Matricula)
+            @Html.EditorFor(model => model.Matricula)
+        </div>
+
+        <div>
+            <div>
+                <input type="submit" value="Guardar" style="margin:5px" />
+                @Html.ActionLink("Volver a Index", "Index")
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+
+    <link href="~/css/main.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div id="header">
+        <h1>SISTEMA VUELOS</h1>
+    </div>
+
+    <div id="menu">
+        @Html.ActionLink("Home", "Index", "Home")
+        @Html.ActionLink("Vuelos", "Index", "Vuelo")
+    </div>
+
+    <div id="content">
+        @RenderBody()
+    </div>
+
+    <div id="content2">
+        <h2>Info@vuelos.com </h2>
+    </div>
+
+    <div id="footer">
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿body {
+    width: 100%;
+}
+
+#header {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+#menu {
+    text-align: center;
+    background-color: cornflowerblue;
+    height: 20px;
+}
+
+#content {
+    text-align: center;
+    position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content2 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 30px
+}
+
+#footer {
+    text-align: center;
+    clear: both;
+}
